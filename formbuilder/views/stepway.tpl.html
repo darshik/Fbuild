@@ -1,0 +1,36 @@
+<script src="../../../build/vendor.formbuilder.js"></script>
+<script src="../../../build/vendor.ui.js"></script>
+<script src="../controllers/FormbuilderCtrl.js"></script>
+
+		 <!--Bootstrap core CSS -->
+	<link href="../../../styles/css/bootstrap.min.css" rel="stylesheet">
+	<!-- font-awesome -->
+	<link href="../../../styles/css/font-awesome.min.css" rel="stylesheet">
+	<!-- animate -->
+	<link href="../../../styles/css/animate.min.css" rel="stylesheet">
+	<!-- textAngular -->
+	<link rel='stylesheet' href='../../../styles/css/textAngular.min.css'>
+	<!-- taoster angular -->
+	<link rel='stylesheet' href='../../../styles/css/toaster.min.css'>
+	<!-- nya select bootstrap -->
+	<link rel='stylesheet' href='../../../styles/css/nya-bs-select.min.css'>
+	<!-- Custom styles for this template -->
+	<link href="../../../styles/css/eda.stepway.css" rel="stylesheet">
+	<!--&lt;!&ndash; HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries &ndash;&gt;-->
+	<!--[if lt IE 9]>
+	<script src="./public/lib/html5shiv/dist/html5shiv.min.js"></script>
+	<script src="./public/lib/respondJS/dest/respond.min.js"></script>
+	<![endif]-->
+
+
+	<div lang="en" ng-app="app.formbuilders" ng-controller="FormbuilderCtrl as frmbldrCtrl">
+
+			<!-- Easy Form Generator (here step way) is now a ridiculous small html :
+			=============================================================-->
+			<eda-step-way-easy-form-gen
+						eda-easy-form-generator-model="frmbldrCtrl.easyFormGeneratorModel"
+						eda-save-form-event="frmbldrCtrl.saveForm(edaEasyFormGeneratorModel)">
+			</eda-step-way-easy-form-gen>
+
+	</div>
+
